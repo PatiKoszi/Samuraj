@@ -1,19 +1,22 @@
+var a = "zmienna globalna";
 
-function one(a) {
-    var a = 45;
+function one() {
+    var a = "ju";
     console.log("zmienna1 " + a);
 
-    function two(a) {
+    function two() {
             var a = 12;
             console.log("zmienna2 " + a);
 
-            function tree(a) {
+            function tree() {
                 var a = 67;
                 console.log(`zmienna3 ${a}`);
 
             }
-            tree(-85);
+            tree();
         }
         two()
 }
-one(67);
+one();
+
+console.log("główna zmienna to: " + a);
