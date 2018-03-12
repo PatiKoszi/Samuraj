@@ -1,36 +1,19 @@
+const age = 73;
 
- function test() {
-     var z = true;
-     if (true) {
-         var z = false;
-         console.log(z);
-     }
-     console.log(z);
- }
- test();
+if (age >=18 && age<=21) {
+    console.log("Możesz kupić małe piwo");
+} else if (age < 18) {
+    console.log("Nie możesz kupić piwa");
+} else if (age>21){
+    console.log("Kup sobie duże piwo")
+}
 
- function test1() {
-     let z = true;
-     if (true) {
-         let z = false;
-         console.log(z);
-     }
-     console.log(z);
- }
- test1();
+let x = "Wto"; // do string uzywaj == sprawdza
 
- function test2() {
-     let z = true;
-     if (true) {
-         let z = false;
-         console.log(z);
-     }
-     console.log(z);
- }
- test2();
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
- //let i const nie pozwolą nadpisac, nie działa w hoistingu
- //var pozwoli nadpisac zmienna, bedziw widoczne w objekcie globalnym window
-
- //const w typie prostym zabezpiecza wartość,
- // NIE w objekcie -tablica ten sam objekt ale może się zmieniać
+if (x=== "Pon") {
+    console.log("Nie lubie poniedziałku");
+} else if (x=== "Wto") {
+    console.log("zaczynam pracować");
+} else if (x=== "sro"){
+    console.log("sroda minie tydzien zginie")
+}
